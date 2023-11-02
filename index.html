@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1f75e7d484.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class ="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                
+                    <li><a href="#Contact">Contact</a></li>
+                    
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Software Engineer</p>
+                <h1>Hi, I'm <span>Rohith Reddy</span><br><span1>From Telangana, India</span1></h1>
+            </div>
+        </div>
+    </div>
+<!-------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="personal-portfolio-img/images/aboutmepic.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am actively seeking a dynamic opportunity that aligns with my extensive experience, comprehensive training, and unwavering enthusiasm. My primary goal is to make a significant impact on the team's success and drive increased profitability for the organization. With a track record of achieving results and a passion for collaborative success, I am eager to contribute my skills and expertise to drive growth and excellence in your business.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designer Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web applications Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>Android developer at Areksoft Technologies</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - current</span><br>B.Tech from BML Munjal University</li>
+                            <li><span>2018 - 2020</span><br>Intermediate from Sri Chaitanya College</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            
+                            <li><span>2023  -</span>  PHP CMS WEB APPLICATION</li>
+                            <li><span>2023  -</span>  Salon Booking APPLICATION</li>
+                            <li><span>2023  -</span>  Breast Cancer Classification</li>
+                            <li><span>2023  -</span>  NLP based Wordplay, Quillbot replica</li>
+                            <li><span>2023  -</span>  System Approach on Hotel Management</li>
+                            <li><span>2022  -</span>  IOT projects</li>
+                            <li><span>2021  -</span>  Hotel Management System</li>
+                            <li><span>2021  -</span>  Video Conferencing</li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------Services-------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>BMU Salon app</h2>
+                    <p>created an Android application for online appointment scheduling that integrated distinct owner and client experiences for a salon at BMU. Utilised XML, Firebase, and Java to develop intuitive software that makes organising appointments simple.</p>
+                    <a href="https://github.com/Rohithrocks/Salon_booking_app">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Wordplay web app</h2>
+                    <p>A website where we can summarise the given sentence with this tool and we can also check the grammar check. Developed Abstractive summarization and used pre trained library, gramformer for checking the grametical errors.</p>
+                    <a href="https://github.com/Rohithrocks/summarizer_grammerchecher_web_application">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Breast cancer classifica..</h2>
+                    <p>Developed deep learning-based models for breast cancer classification using a convolutional neural network (CNN). This includes data pre-processing, data augmentation, data splitting, and the architectures of CNN and Transfer Learning model with VGG16, ResNet50V2 base. </p>
+                    <a href="https://github.com/Rohithrocks/Breast_cancer_classification">Learn more</a>
+                </div>
+                
+            </div>
+
+
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>HARDWARE PROJECTS | IOT</h2>
+                    <p>Master and slave demonstration using two HC-05 bluetooth module , Automatic
+                        street light using op-amp 741 and Soil moisture and temperature measurement.</p>
+                    <a href="https://378a-2401-4900-5f92-3dda-bd2a-42e6-4456-e4e.in.ngrok.io/">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>CMS Web Application</h2>
+                    <p>This is a CMS framework based web application where we can upload, read, update and delete the post, and as well as same for the content and the categories and lot more . We used apache and mysql servers to run php application and used phpadmin localhost to store the complete data</p>
+                    <a href="https://github.com/Rohithrocks/PHP_based_cms_web_application">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Hotel Management Syatem</h2>
+                    <p>We analysed systems by taking into account the entities, relationships, modularity,
+                        and various levels of the architecture of the hotel management system and developed database management system for the same using mysql. </p>
+                    <a href="https://github.com/Rohithrocks/Hotel_management_system">Learn more</a>
+                </div>
+                
+            </div>
+
+        
+        </div>
+    </div>
+
+    <!-- -----Portfolio
+    <div id="My Work">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="personal-portfolio-img/images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nostrum veniam sint voluptate, deleniti fugit est obcaecati modi fugiat iure dolores.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="personal-portfolio-img/images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nostrum veniam sint voluptate, deleniti fugit est obcaecati modi fugiat iure dolores.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="personal-portfolio-img/images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nostrum veniam sint voluptate, deleniti fugit est obcaecati modi fugiat iure dolores.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div> -->
+
+    <!-------Contact------->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>chittepurohithreddy9@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9392458897</p>
+                    <div class="social-icons">
+                        
+                        <a href="https://github.com/Rohithrocks"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/rohithreddychittepu?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chittepu-rohith-reddy-04b072204/ "><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a  href="Chittepu_Rohith_Reddy_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type = "text" name = "Name" placeholder="Your Name" required>
+                        <input type = "email" name ="email" placeholder="Your Email" required>
+                        <textarea name = "Message" rows ="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+       
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        } 
+        
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzwexFi9rRXokznCnwkIbt91JnAHvWnOq8VtZOQavJaB6wiDxEbQzyo-W3nYwjbxXDG/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
